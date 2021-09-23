@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif !important;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+  opacity: 70%;
+  transition: opacity 0.25s;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  min-height: 100vh;
+  /* background-color: #F4F6F6; */
+  background-image: url("/images/background.svg");
+  background-repeat: repeat;
+  /* background-size: cover; */
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.navbar-brand {
+  /* color: white !important; */
+  font-weight: 900;
+}
+
+.nav-link {
+  /* color: white !important; */
+}
+
+.nav-image {
+  height: 100px;
+}
+
+.main-color {
+  background-color: white !important;
+  /* background-color: #D1E3F1 !important; */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+}
+
+.about {}
+
+.about-image {
+  border-radius: 50%;
+  /* background-color: #ADD8E6; */
+  width: 40%;
+  margin-left: 10%;
+}
+
+.topics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topic img {
+  width: 120px;
+  border-radius: 0;
+  margin: 20px 0 10px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0 20px;
+}
+
+.footer img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Personal styles */
+.section {
+  margin: 50px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+}
+
+.section-title h1 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.section-title img {
+  height: 50px;
+  margin-right: 20px;
+  display: none;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+}
+
+.section-content img {
+  width: 200px;
+  margin: 0 20px;
+}
+
+.section-content p {
+  margin: 0 20px;
+}
+
+.second-order img {
+  order: 2;
+}
+
+.second-order p {
+  order: 1;
+}
+
+/* Professional styles */
+.timeline-container {
+  width: 100%;
+  margin: 100px;
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-container hr {
+  position: absolute;
+  margin-top: 115px;
+  width: 80%;
+  z-index: -1;
+  height: 2px;
+  border-width: 0px;
+  background-color: #DDDDDD;
+}
+
+.timeline {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline img {
+  width: 120px;
+  margin: 10px 0;
+}
+
+.timeline p {
+  margin-bottom: 5px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.experience h4 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin: 0 20px;
+    padding: 0;
+  }
+
+  .home {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-image {
+    order: 1;
+    width: 200px;
+    margin: 20px 0;
+  }
+
+  .about {
+    order: 2;
+  }
+
+  .about h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .about p {
+    margin-bottom: 0;
+  }
+
+  .topics {
+    justify-content: space-around;
+  }
+
+  .footer {
+    margin-top: 20px;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  .section-title img {
+    display: inline;
+  }
+
+  .section-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-content img {
+    width: 200px;
+    margin: 20px 0;
+    display: none;
+  }
+
+  .section-content p {
+    margin: 0;
+  }
+
+  .second-order img {
+    order: 1;
+  }
+
+  .second-order p {
+    order: 2;
+  }
+
+  .timeline-container {
+    display: none;
+  }
+}
