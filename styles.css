@@ -116,9 +116,20 @@ body {
   align-items: center;
 }
 
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-header h4 {
+  text-align: center;
+}
+
 .section-title {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .section-title h1 {
@@ -201,6 +212,64 @@ body {
   text-align: center;
 }
 
+/* Book review styles */
+.reviews {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.review {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  width: 45%;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.review:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.review-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-title img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.review-title h1 {
+  text-align: center;
+}
+
+.review p {
+  margin-bottom: 0;
+}
+
+.review hr {
+  width: 100%;
+}
+
+.rating {
+  text-align: center;
+}
+
+.rating strong {
+  /* color: #5D6D7E;
+  color: #1A5276;
+  font-weight: normal; */
+}
+
 @media only screen and (max-width: 960px) {
   .content {
     flex-direction: column;
@@ -275,5 +344,9 @@ body {
 
   .timeline-container {
     display: none;
+  }
+
+  .review {
+    width: 100%;
   }
 }
