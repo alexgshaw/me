@@ -270,6 +270,44 @@ body {
   font-weight: normal; */
 }
 
+.content h1 {
+  text-align: center;
+}
+
+#results {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.crypto-title {
+  margin-bottom: 50px;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  width: 500px;
+}
+
+.result-rank {
+  display: flex;
+  align-items: center;
+  width: 50px;
+}
+
+.result h3 {
+  margin: 0;
+}
+
+.result-info {
+  display: flex;
+}
+
 @media only screen and (max-width: 960px) {
   .content {
     flex-direction: column;
@@ -348,5 +386,21 @@ body {
 
   .review {
     width: 100%;
+  }
+
+  .result {
+    width: 90%;
+  }
+
+  .result h4 {
+    font-size: 1.2em;
+  }
+
+  .result-rank {
+    width: 30px;
+  }
+
+  .crypto-title {
+    margin-bottom: 20px;
   }
 }
